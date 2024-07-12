@@ -3,6 +3,9 @@
 int	main(void)
 {
 	Zombie *horde;
-	horde = zombieHorde(10, "enzo");
-	horde[4].announce();
+	int		n = 42;
+
+	horde = zombieHorde(n, "enzo");
+	for(int i = 0; i < n; i++)
+		horde[i].announce();
 }
